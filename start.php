@@ -11,6 +11,8 @@
         $sPass = $_POST['password'];
         $sGames = $_POST['games'];
 
+        $sUserHTML = htmlspecialchars($sUser, ENT_QUOTES);
+
         // Search for duplicate account
         $dupUser = $db->query('SELECT username FROM accounts WHERE username=?', [
             $sUser
@@ -92,7 +94,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title" align="center"><i class="fab fa-steam fa-3x"></i><br />Start Hourboost</h2>
-					<?=($dupUserString != $sUser ? "<b><font color='GREEN'>SUCCESS: STARTED HOURBOOST FOR ACCOUNT '".$sUser."'!</font></b><br />" : "")?>
+					<?=($dupUserString != $sUser ? "<b><font color='GREEN'>SUCCESS: STARTED HOURBOOST FOR ACCOUNT '".$sUserHTML."'!</font></b><br />" : "")?>
                     <?=($dupUser > 0 ? "<b><font color='RED'>ERROR: ACCOUNT IS BEING BOOSTED ALREADY!</font></b><br />" : "")?>
                     <form method="POST">
                         <div class="input-group">
