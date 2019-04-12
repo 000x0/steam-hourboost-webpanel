@@ -27,3 +27,5 @@ If you find any bugs, please do not hesitate to report them to me.
 ### 🤖 Authors
 
 * Triniayo
+
+### [💰 Donate](https://paypal.me/TriniaCS)
