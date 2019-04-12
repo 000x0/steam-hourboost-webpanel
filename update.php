@@ -1,6 +1,5 @@
 <?php
     // Includes
-    require __DIR__.'/classes/Helper.php';
     require __DIR__.'/includes/db.php';
 
     // Start Hourboost
