@@ -71,7 +71,7 @@
                         </div>
                         <div class="p-t-15">
                             <button class="btn btn--radius-2 btn--blue" type="submit" id="submit" name="submit">Submit</button>
-                            <a href="index.php"><div class="btn btn--radius-2 btn--blue">Back</div></div></a>
+                            <a href="index.html"><div class="btn btn--radius-2 btn--blue">Back</div></div></a>
                         </div>
                         <div class="title" align="center">Coded by <a href="https://github.com/Triniayo">Jerr0w</a></div>
                     </form>
