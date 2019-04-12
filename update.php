@@ -7,6 +7,8 @@
         $sUser = $_POST['username'];
         $sGames = $_POST['games'];
 
+        $sUserHTML = htmlspecialchars($sUser, ENT_QUOTES);
+
         // Try to find account
         $findUser = $db->query('SELECT username FROM accounts WHERE username=?', [
           $sUser
@@ -58,7 +60,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title" align="center"><i class="fab fa-steam fa-3x"></i><br />Change Games</h2>
-                    <?=($findUser > 0 ? "<b><font color='GREEN'>SUCCESS: CHANGED GAMES FOR ACCOUNT '".$sUser."'!</font></b><br />" : "")?>
+                    <?=($findUser > 0 ? "<b><font color='GREEN'>SUCCESS: CHANGED GAMES FOR ACCOUNT '".$sUserHTML."'!</font></b><br />" : "")?>
 					<?=($findUserString != $sUser ? "<b><font color='RED'>ERROR: ACCOUNT NOT FOUND!</font></b><br />" : "")?>
                     <form method="POST">
                         <div class="input-group">
