@@ -32,6 +32,6 @@ If you find any bugs, please do not hesitate to report them to me.
 
 ### Screenshots
 ![Overview](https://trinia.pro/file/xtdna.png "Overview")    
-![Start Hourboost](https://trinia.pro/file/36fvu.png "Start Hourboost")    
+![Start Hourboost](https://trinia.pro/file/7cxp0.png "Start Hourboost")    
 ![Change Games](https://trinia.pro/file/2ym8d.png "Change Games")    
 ![Stop Hourboost](https://trinia.pro/file/7jvod.png "Stop Hourboost")    
